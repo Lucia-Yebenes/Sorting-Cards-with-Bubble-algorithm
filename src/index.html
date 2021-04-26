@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <title>Sorting Cards with Bubble algorithm</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--barra de arriba-->
+        <div class="row">
+            <ul class="nav col-12">
+                <li class="nav-item">
+                    <input id="NummCardd" num="Cantidad de cartas" type="number" value="" />
+                </li>
+                <li class="nav-item">
+                    <button id="BtnDraw" type="button" class="btn btn-light mx-2">Draw</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-light">Sort</button>
+                </li>
+            </ul>
+            <!--CARTA desordenada -->
+            <div class="cartaDeso">
+                <!-- <div class="Carta col-1 bg-light rounded-lg p-0 mx-5 my-5 shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="icono1 col-12 text-right px-0">♠️</div>
+                    <h1 id="num" class="text-center">8</h1>
+                    <div id="IconROtado" class="icono1 col-12 px-0">♠️</div>
+                </div> -->
+            </div>
+        </div>
+
+        <h2 class="col-12 text-light">Bubble Sort Log</h1>
+            <!--carta ordenadas-->
+            <div class="CartaOrden">
+                <div class="col-1 bg-light rounded-lg p-0 mx-5 my-5 shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="icono1 col-12 text-right px-0">♠️</div>
+                    <h1 id="num" class="text-center">8</h1>
+                    <div id="IconROtado2" class="icono1 col-12 text-right px-0">♠️</div>
+                </div>
+            </div>
+            <!--cierre carta ordenadas-->
     </div>
-  </body>
+    <!--cierra grilla-->
+    </div>
+    <!--cierra contenedor-->
+</body>
+
 </html>

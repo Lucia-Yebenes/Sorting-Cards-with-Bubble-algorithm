@@ -1,1 +1,18 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: #056d0f;
+}
+.icono1 {
+  font-size: 55px;
+}
+h1 {
+  font-size: 75px;
+}
+#IconROtado {
+  transform: rotate(180deg);
+  text-align: right;
+}
+#IconROtado2 {
+  transform: rotate(180deg);
+  text-align: right;
+}
